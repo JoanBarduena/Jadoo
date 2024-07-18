@@ -10,6 +10,10 @@
     /* border: 1px solid red; */
 }
 
+::selection{
+    background: rgba(241, 165, 1, 0.3); 
+}
+
 body {
     padding: 2% 7%;
 }
@@ -21,6 +25,11 @@ nav {
 
 a {
     text-decoration: none;
+    transition: all .3s ease;
+}
+
+a:hover{
+    transform: scale(1.03);
 }
 
 select {
@@ -107,12 +116,12 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -100;
     width: 48%;
     height: auto;
 }
 
-.landing-info{
+.landing{
     padding: 20px 0 0 0;
 }
 
@@ -163,10 +172,29 @@ p {
     }
 }
 
-.landing-img img{
+.landing-img{
+    position: relative; 
+}
+
+.traveller{
     width: 100%;
     height: auto;
     margin-top: 10%; 
+}
+
+.plane-1, .plane-2{
+    position: absolute; 
+    z-index: -70; 
+}
+
+.plane-1{
+    top: 0; 
+    left: 10%; 
+}
+
+.plane-2{
+    top: 20%; 
+    right: 0; 
 }
 
 .landing-h1{
@@ -177,7 +205,7 @@ p {
     position: absolute;
     top: 80px;
     right: 140px;
-    z-index: -1;
+    z-index: -50;
 }
 
 .center-line {

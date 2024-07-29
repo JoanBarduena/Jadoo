@@ -101,6 +101,7 @@ h4 {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 p {
@@ -236,17 +237,28 @@ p {
 }
 
 .service-item{
-    margin: 2%;
+    margin: 3% 3% 2% 3%;
     padding: 2%;
-    text-align: center;
+    text-align: center; 
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0 50px 50px 0 rgba(0,0,0,0.05);
+        border-radius: 50px;
+    }
 }
 
 .service-img, .service-title{
     margin-bottom: 10%; 
 }
 
+.service-desc{
+    padding: 0 10%;
+}
+
 .service-img{
-    height: 70px;
+    height: 100px;
     object-fit: cover;
 }
 
